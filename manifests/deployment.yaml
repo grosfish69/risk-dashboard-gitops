@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: risk-dashboard
-          image: nginx:latest
+          image: ghcr.io/grosfish69/risk-dashboard:0.1.0
           ports:
-            - containerPort: 80
+            - containerPort: 8000
