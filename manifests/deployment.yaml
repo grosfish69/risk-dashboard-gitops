@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: risk-dashboard
-          image: ghcr.io/grosfish69/risk-dashboard:0.1.0
+          image: ghcr.io/grosfish69/risk-dashboard:dev-latest
           ports:
             - containerPort: 8000
