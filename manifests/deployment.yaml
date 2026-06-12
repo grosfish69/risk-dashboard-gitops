@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: risk-dashboard
+  labels:
+    app: risk-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: risk-dashboard
+  template:
+    metadata:
+      labels:
+        app: risk-dashboard
+    spec:
+      containers:
+        - name: risk-dashboard
+          image: nginx:latest
+          ports:
+            - containerPort: 80
